@@ -1,0 +1,165 @@
+ /* Background images  */
+
+#section-header {
+    background-image: url('../sources/img/fond-1.png');
+    padding: 3% 5%;
+}
+
+#section-products {
+    background-image: url('../sources/img/fond-2.png');
+    background-size:cover;
+    padding: 0 0 0 10%;
+}
+
+#section-workflow {
+    background-image: url('../sources/img/fond-1.png');
+    padding: 0 0 0 10%;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+#navlink-container{
+    width: 70%;
+    text-align: right;
+    /* border:1px solid red; */
+}
+
+.navlink {
+    margin: 0 0 0 7%;
+    font-family: "Lato-Bold";
+    font-size: 0.9rem;
+}
+
+#section-header header, #claim {
+    padding: 0 5%;
+
+}
+
+article {
+    width: 40%;
+    color: white;
+    padding: 5% 0;
+}
+
+h1 {
+    font-family: "Poppins";
+    font-size: 2.4rem;
+}
+
+#claim h3 {
+    margin-bottom: 10%;
+    font-family: "Lato-Light";
+}
+
+.btnlink {
+    padding: 10px 12px;
+    background-color: #c141ec;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: "Lato-Bold";
+    font-size: 0.8rem;
+}
+
+.navlink:hover{
+border-bottom: 1px solid #c141ec;
+}
+
+.btnlink:hover {
+    box-shadow: 0px 0px 1px 1px #c141ec;
+}
+
+.btnlink:hover span {
+    margin-left :5px;
+    transition: margin-left 0.1s;
+}
+
+.fa-chevron-right {
+    margin-left:3%;
+}
+
+#claim a {
+    font-family: "Lato-Bold";
+    color: white;
+    text-decoration: none;
+}
+
+#spandiscover {
+    display:inline-block; 
+    width: 50px; 
+    margin: 0 5px 5px 0; 
+    border:0.5px solid white;
+}
+
+#divdiscover {
+    width:30%;
+    margin-top: 50px;
+}
+
+#divdiscover:hover #spandiscover{
+    margin-left:10px;
+    transition: margin-left 0.5s;
+}
+
+
+h2 {
+    font-family: "Poppins";
+    color: #023246;
+}
+
+
+
+
+#container-products {
+    display:flex;
+    justify-content: space-between;
+}
+
+.div-products {
+    border:1px solid red;
+}
+
+h4 {
+    font-family: "Poppins";
+}
+
+.div-product-description {
+    color: white;
+    font-family: "Lato-Regular";
+    width: 80%;
+    padding-left: 5%;
+}
+
+
+/* Fonts */
+@font-face {
+    font-family: "Lato-Bold";
+    src: url("../sources/fonts/Lato/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("../sources/fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Light";
+    src: url("../sources/fonts/Lato/Lato-Thin.ttf");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../sources/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+
+
