@@ -16,9 +16,22 @@
     padding: 5% 0 10% 10%;
 }
 
-#section-workflow {
+#section-workflow, #section-contact-quote {
     background-image: url('../sources/img/fond-1.png');
-    padding: 5% 0 10% 10%;
+    background-size:cover;
+    padding: 5% 10% 5% 10%;
+}
+
+#section-testimonials {
+    padding: 5% 10% 10% 10%;
+}
+
+#section-contact {
+margin-bottom:5%;
+}
+
+#section-quote {
+color:white;
 }
 
 
@@ -50,7 +63,7 @@ nav {
 
 }
 
-article {
+#article-header {
     width: 40%;
     color: white;
     padding: 5% 0;
@@ -73,6 +86,8 @@ h1 {
     text-transform: uppercase;
     font-family: "Lato-Bold";
     font-size: 0.8rem;
+    color:white;
+    cursor: pointer;
 }
 
 .navlink:hover{
@@ -133,9 +148,8 @@ h2::after {
     height:2px;
     width: 75%;
     position: absolute;
-    bottom: 0;}
-
-
+    bottom: 0;
+}
 
 
 #container-products {
@@ -145,12 +159,14 @@ h2::after {
 
 .div-products {
     border:1px solid #002430;
-    padding:8%;
+    padding:7%;
     margin: 5% 0;
     width:80%;
-    border-radius: 2px;
+    border-radius: 3px;
     text-align: center;
     cursor:pointer;
+    color: #023246;
+
 }
 
 .div-products:hover, .div-products-selected {
@@ -177,7 +193,7 @@ color:white;
 
 #console {
     margin-top:1.5%;
-    width:60%;
+    width:65%;
 }
 
 #console-header {
@@ -210,6 +226,10 @@ color:white;
     background-color: #38a401
 }
 
+.white {
+    color:white;
+}
+
 #console-main {
     display:flex; 
     height: 90%;
@@ -228,6 +248,243 @@ color:white;
     border-bottom-right-radius:5px;
 }
 
+
+
+
+/* Workflow */
+#section-workflow > div {
+    display: flex; 
+    flex-direction: column; 
+    margin-top:-300px
+}
+
+#arrow {
+    width: 55%;
+    position: absolute;
+    right: 30%;
+    margin-top: 10%;
+
+}
+
+.article-workflow {
+    background-color: white;
+    width: 60%;
+    height:220px;
+    margin:5% 0;
+    padding:2% 4%;
+    color: #082d3f;
+    border-radius: 3px;
+    position: relative;
+    z-index: 9999;
+
+}
+
+.article-workflow:nth-child(odd) {
+    align-self: flex-end;
+}
+
+.article-workflow div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.article-workflow h3 {
+    font-family: "Poppins";
+    color: #023246;
+    font-size: 1.5rem;
+    padding: 0 0 10px 0;
+    position: relative;
+    display:inline-block;
+}
+
+
+.article-workflow h3::after {
+    content:"";
+    background: -webkit-linear-gradient(left,   #D8A9F1 30%, #89C9DE 100%);
+    display: block;
+    height:2px;
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+}
+
+.article-workflow p {
+    font-family: "Lato-Regular";
+    margin-top:0;
+}
+
+
+/* Testimonials */
+
+#container-testimonials {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.article-testimonials {
+    background: rgb(0,55,70); /* Old browsers */
+    background: -moz-linear-gradient(-70deg,  rgba(0,55,70,1) 0%, rgba(1,33,44,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-70deg,  rgba(0,55,70,1) 0%,rgba(1,33,44,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(-70deg,  rgba(0,55,70,1) 0%,rgba(1,33,44,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003746', endColorstr='#01212c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color:white;
+    border-radius: 3px;
+    padding: 3% 5%;
+    font-family: "Lato-Italic";
+    letter-spacing: 0.5px;
+    line-height: 1.3rem;
+    width: 45%;
+}
+
+.article-testimonials * {
+    margin:2% 0;
+}
+
+.p-testimonials {
+    margin: 10px 0;
+}
+
+
+
+/* Contact & Quote */
+
+.container-contact-quote {
+    display:flex; 
+    justify-content: space-between;
+}
+
+.container-contact-quote-text {
+    width:30%;
+    padding:2% 2% 2% 0;
+    color:white;
+    font-family: "Lato-Regular";
+    letter-spacing: 0.5px;
+    line-height: 1.5rem;
+}
+
+#container-contact-articles {
+    width:70%;
+    display:flex;
+    justify-content: space-around;
+    color:white;
+    font-family: "Poppins";
+    margin-top:-250px;
+
+}
+
+#container-contact-articles article {
+    width:30%;
+}
+
+#container-contact-articles h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    padding: 0 0 10px 0;
+    position: relative;
+    display:inline-block;
+}
+
+#container-contact-articles h3::after {
+    content:"";
+    background: -webkit-linear-gradient(left,   #D8A9F1 30%, #89C9DE 100%);
+    display: block;
+    height:2px;
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+}
+
+#container-contact-articles p {
+    font-family: "Poppins-Regular";
+    font-size: 0.9rem;
+    display:block;
+}
+
+#container-contact-articles small {
+    font-family: "Poppins-Regular";
+    font-size: 0.7rem;
+    display:block;
+    margin-bottom:1%;
+}
+
+.mailtolink {
+    display:inline-block;
+    background-color: #c141ec;
+    font-size: 0.7rem;
+    padding:4%;
+    border-radius: 3px;
+    margin-top:10px;
+}
+
+.mailtolink:hover {
+    box-shadow: 0px 0px 1px 1px #c141ec;
+}
+
+.phonelink {
+    display:inline-block;
+    background-color: #0194c8;
+    font-size: 0.7rem;
+    padding:4%;
+    border-radius: 3px;
+    margin-top:10px;
+}
+
+.phonelink:hover {
+    box-shadow: 0px 0px 1px 1px #0194c8;
+}
+
+#container-quote-form {
+    width: 65%;
+    margin-top: -90px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border:none;
+    padding:1.5% 0%;
+}
+
+fieldset input:nth-child(1) {
+    margin-right:3.3%;
+}
+
+form input {
+    width:47%;
+}
+
+form input::placeholder {
+    color: #023246;
+}
+
+form input, form textarea {
+    border-radius: 3px;
+    border:0px;
+    font-family: "Poppins";
+    font-size: 0.8rem;
+}
+
+form input,form textarea::placeholder {
+    padding:2% 3%;
+    color: #023246;
+}
+
+form textarea {
+    width: 98%;
+}
+
+form button {
+    align-self: flex-end;
+    width: 15%;
+    border:none;
+}
+
+
+
 /* Fonts */
 @font-face {
     font-family: "Lato-Bold";
@@ -245,8 +502,18 @@ color:white;
 }
 
 @font-face {
+    font-family: "Lato-Italic";
+    src: url("../sources/fonts/Lato/Lato-LightItalic.ttf");
+}
+
+@font-face {
     font-family: "Poppins";
     src: url("../sources/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../sources/fonts/Poppins/Poppins-Regular.ttf");
 }
 
 
