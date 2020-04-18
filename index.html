@@ -14,33 +14,47 @@
     <section id="section-header">
         <header>
             <nav>
-                <div>
+                <div id="logo-container">
                     <img src="./sources/img/Layer-2.png" alt="">
                 </div>
                 <div id="navlink-container">
-                    <a class="navlink" href="">Products</a>
-                    <a class="navlink" href="">Workflow</a>
-                    <a class="navlink" href="">Testimonials</a>
-                    <a class="navlink" href="">Contact Us</a>
+                    <a class="navlink" href="#section-products">Products</a>
+                    <a class="navlink" href="#section-workflow">Workflow</a>
+                    <a class="navlink" href="#section-testimonials">Testimonials</a>
+                    <a class="navlink" href="#section-contact-quote">Contact Us</a>
                 </div>
-
+                <div id="btn-menu">
+                    <span>
+                        <i id="btn-hamburger" class="fas fa-bars"></i>
+                    </span>
+                </div>
             </nav>
+            <div id="navlink-mobile">
+                <div id="navlink-container-mobile">
+                    <a class="navlink" href="#section-products">Products</a>
+                    <a class="navlink" href="#section-workflow">Workflow</a>
+                    <a class="navlink" href="#section-testimonials">Testimonials</a>
+                    <a class="navlink" href="#section-contact-quote">Contact Us</a>
+                </div>
+            </div>
         </header>
 
         <div id="claim">
             <article id="article-header">
                 <h1>AI for Augmented Business Intelligence</h1>
                 <h3>We build innovative algorithmics strategies to help you leverage the power of your data</h3>
-                <a class="btnlink" href="">Get a quote <span><i class="fas fa-chevron-right"></i></span></a>
+                <a class="btnlink" href="#section-quote">Get a quote <span><i
+                            class="fas fa-chevron-right"></i></span></a>
             </article>
             <div id="divdiscover">
-                <span id="spandiscover"></span><a href="" id="discover">Discover our products</a>
+                <span id="spandiscover"></span><a href="#section-products" id="discover">Discover our
+                    products</a>
             </div>
         </div>
 
     </section>
 
-    <main style="border:1px solid gray;">
+    <main>
 
         <section id="section-products">
             <h2>Our Products</h2>
@@ -265,32 +279,30 @@
                     <div id="container-quote-form">
                         <form action="">
                             <fieldset>
-                                <input type="text" name="" id="" placeholder="Complete Name">
-                                <input type="email" name="" id="" placeholder="Email">
+                                <input type="text" name="inputName" id="inputName" placeholder="Complete Name">
+                                <input type="email" name="inputEmail" id="inputEmail" placeholder="Email">
                             </fieldset>
 
                             <fieldset>
-                                <input type="text" name="" id="" placeholder="Company">
-                                <input type="text" name="" id="" placeholder="Position">
+                                <input type="text" name="inputCompany" id="inputCompany" placeholder="Company">
+                                <input type="text" name="inputPosition" id="inputPosition" placeholder="Position">
                             </fieldset>
                             <fieldset>
-                                <textarea name="" id="" cols="30" rows="10"
+                                <textarea name="inputMessage" id="inputMessage" cols="30" rows="10"
                                     placeholder="Describe your needs"></textarea>
                             </fieldset>
-                            <button class="btnlink" type="submit">Envoyer</button>
+                            <button class="btnlink" id="submitbtn" type="submit">Envoyer</button>
                         </form>
                     </div>
                 </div>
-
-
 
             </section>
         </section>
 
 
-        <section>
-            <h2>We're part of the Quantrack Tech Universe</h2>
-            <div>
+        <section id="section-quantrack-universe">
+            <h2><span>We're part of the</span> Quantrack Tech Universe</h2>
+            <div id="container-quantrack-universe">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut laborum mollitia voluptas sed
                     voluptatibus, inventore sunt, ut adipisci modi vitae autem repellendus. Quia odit rem et ipsum aut
                     deleniti consequuntur?
@@ -299,25 +311,27 @@
                     voluptatibus, inventore sunt, ut adipisci modi vitae autem repellendus. Quia odit rem et ipsum aut
                     deleniti consequuntur?
                 </p>
-                <a href="">Visit Quantrack.io <span>=></span></a>
+                <a class="btnlink" target="blank" href="http://quantrack.io/">Visit Quantrack.io <span><i
+                            class="fas fa-chevron-right"></i></span></a>
             </div>
         </section>
     </main>
 
     <footer>
         <nav>
-            <a href="">Products</a>
-            <a href="">Workflow</a>
-            <a href="">Testimonials</a>
-            <a href="">Contact Us</a>
+            <a href="#section-products">Products</a>
+            <a href="#section-workflow">Workflow</a>
+            <a href="#section-testimonials">Testimonials</a>
+            <a href="#section-contact-quote">Contact Us</a>
         </nav>
         <div>
-            <img src="" alt="">
-            <small>Quantrack builds innovative algorithmics strategies to help you leverage the power of your
-                data.</small>
+            <img src="./sources/img/Layer-2.png" alt="">
+            <p>Quantrack builds innovative algorithmics strategies to help you leverage the power of your
+                data.</p>
         </div>
 
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
