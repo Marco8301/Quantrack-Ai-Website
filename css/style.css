@@ -3,6 +3,9 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 .hidden {
     display:none;
@@ -10,8 +13,17 @@
 
 /* Sections Styling & Background images  */
 
+
+header {
+    top: 0;
+    height: 0px;
+    position: sticky;
+    z-index: 9999999999;
+
+}
+
 #section-header {
-    background-image: url('../sources/img/fond-1.png');
+    background-image: url('../sources/img/fond-1.jpg');
     padding: 2rem 4rem;
 }
 
@@ -22,7 +34,7 @@
 }
 
 #section-workflow, #section-contact-quote {
-    background-image: url('../sources/img/fond-1.png');
+    background-image: url('../sources/img/fond-1.jpg');
     background-size:cover;
     padding: 2rem 4rem 2rem 4rem;
 }
@@ -54,10 +66,26 @@ a {
     color: white;
 }
 
-nav {
+header nav {
     display: flex; 
     justify-content: space-between; 
     align-items: center;
+    -webkit-transition: all ease-out .5s;
+    -moz-transition: all ease-out .5s;
+    -o-transition: all ease-out .5s;
+    transition: all ease-out .5s;
+}
+
+.changed {
+    background: rgb(0,55,70); /* Old browsers */
+    background: -moz-linear-gradient(-70deg,  rgba(0,55,70,1) 0%, rgba(1,33,44,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-70deg,  rgba(0,55,70,1) 0%,rgba(1,33,44,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(-70deg,  rgba(0,55,70,1) 0%,rgba(1,33,44,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003746', endColorstr='#01212c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */    }
+
+#logo-container {
+    padding-top: 0.5rem;
+    padding-left:4rem;
 }
 
 #btn-menu {
@@ -74,6 +102,7 @@ nav {
 #navlink-container{
     width: 70%;
     text-align: right;
+    padding-right:4rem;
 }
 
 #navlink-container-mobile {
@@ -101,11 +130,14 @@ nav {
     font-size: 2.4rem;
 }
 
-#article-header h3 {
+#article-header h2 {
     width: 22rem;
     /* margin-bottom: 10%; */
     margin-bottom: 4rem;
     font-family: "Lato-Light";
+    font-size: 1rem;
+    color: white;
+    display: block;
 }
 
 .btnlink {
@@ -165,7 +197,7 @@ border-bottom: 1px solid #c141ec;
 }
 
 
-h2 {
+.title {
     font-family: "Poppins";
     font-size: 2.5rem;
     color: #023246;
@@ -175,7 +207,7 @@ h2 {
 
 }
 
-h2::after {
+.title::after {
     content:"";
     background: -webkit-linear-gradient(left,   #D8A9F1 30%, #89C9DE 100%);
     display: block;
@@ -230,8 +262,9 @@ h2::after {
 }
 
 #console {
-    margin-top:1.5%;
     width:65%;
+    padding-top: 4rem; 
+    margin-top: -4rem;
 }
 
 #console-header {
@@ -243,6 +276,14 @@ h2::after {
     border-top-left-radius:5px; 
     display:flex; 
     align-items: center;
+}
+
+#console-header-title{
+    margin-left: 12.5%;
+    width: 25rem;
+    color: white;
+    font-family: "Lato-Regular";
+    font-size: 0.8rem;
 }
 
 .dot {
@@ -577,6 +618,7 @@ footer nav, footer div {
 footer nav a {
     color:#8ea6ad;
     font-size: 0.8rem;
+    margin: 0 0 0 2rem;
 }
 
 footer nav a:hover {
@@ -606,14 +648,20 @@ footer div p {
 
 @media (max-width: 499px) { 
 
-
-
     body {
         width: 100%;
     }
 
-    #section-header {
+    header {
         padding: 0;
+    }
+
+    header nav {
+        padding: 0 1rem;
+    }
+
+    #section-header {
+        padding: 9.5rem 2rem 0 2rem;
         width: 100%;
     }
     
@@ -621,7 +669,7 @@ footer div p {
         padding: 2rem 2rem 2rem 2rem;
     }
 
-    #section-header header, #claim {
+    #section-header header {
         padding: 0 2rem;
     }
 
@@ -637,13 +685,14 @@ footer div p {
         background-image: none;
     }
 
-    header {
+    header nav, #navlink-mobile {
         background: rgb(0,55,70); /* Old browsers */
         background: -moz-linear-gradient(-70deg,  rgba(0,55,70,1) 0%, rgba(1,33,44,1) 100%); /* FF3.6-15 */
         background: -webkit-linear-gradient(-70deg,  rgba(0,55,70,1) 0%,rgba(1,33,44,1) 100%); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(-70deg,  rgba(0,55,70,1) 0%,rgba(1,33,44,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003746', endColorstr='#01212c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */    
     }
+
 
     .navlink {
         margin: 0.5rem 0 0 0;
@@ -687,7 +736,7 @@ footer div p {
         width: 15rem;
     }
 
-    h2 {
+    .title {
         font-size: 2rem;
     }
 
@@ -808,11 +857,20 @@ footer div p {
 @media (min-width: 500px) and (max-width: 767px) { 
 
 
-    #section-header {
+    header {
         padding: 0;
     }
 
-    #section-header header, #claim {
+    header nav {
+        padding: 0 1rem;
+    }
+
+    #section-header {
+        padding: 9.5rem 2rem 0 2rem;
+        width: 100%;
+    }
+
+    #section-header header {
         padding: 0 4rem;
     }
 
@@ -828,13 +886,13 @@ footer div p {
         background-image: none;
     }
 
-    header {
-    background: rgb(0,55,70); /* Old browsers */
-    background: -moz-linear-gradient(-70deg,  rgba(0,55,70,1) 0%, rgba(1,33,44,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-70deg,  rgba(0,55,70,1) 0%,rgba(1,33,44,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(-70deg,  rgba(0,55,70,1) 0%,rgba(1,33,44,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003746', endColorstr='#01212c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */    
-}
+    header nav, #navlink-mobile {
+        background: rgb(0,55,70); /* Old browsers */
+        background: -moz-linear-gradient(-70deg,  rgba(0,55,70,1) 0%, rgba(1,33,44,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-70deg,  rgba(0,55,70,1) 0%,rgba(1,33,44,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(-70deg,  rgba(0,55,70,1) 0%,rgba(1,33,44,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003746', endColorstr='#01212c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */    
+    }
 
     .navlink {
         margin: 0.5rem 0 0 0;

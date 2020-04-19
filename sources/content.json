@@ -1,0 +1,72 @@
+[
+    {
+        "0": {
+            "title": "Our products - Machine Learning & Predictive Modelling",
+            "content": "<span style='color: #018db0'>const</span> <span class='product-title' style='color:#c141ec'>DATASTRATEGY</span> = Your data is your most valuable asset, we help you take care of it. Before implementing any machine learning algorithm, we’ll help you gather, clean, and securely store your data."
+        },
+        "1": {
+            "title": "Our products - Machine Learning & Predictive Modelling",
+            "content": "<span style='color: #018db0'>let</span> <span class='product-title' style='color:#c141ec'>quickPrediction</span> = Machine learning and artificial intelligence prediction algorithms not only perform better, but also faster. Accurate and quick predictions, with your data."
+        },
+        "2": {
+            "title": "Our products - Machine Learning & Predictive Modelling",
+            "content": "<span style='color: #018db0'>function</span> <span class='product-title' style='color:#c141ec'>feedback() </span> { <br> Machine learning strategies are dynamic, not static. User friendly feedback, efficient back-testing, and operations-oriented deployment is at the core of our strategy.<br>}"
+        }
+    },
+    {
+        "0": {
+            "title": "Our products - AI for Marketing",
+            "content": "<span style='color: #018db0'>const</span> <span class='product-title' style='color:#c141ec'>OPTIMALPRICING</span> = Machine learning driven price optimisation is reshaping industries from clothing brands to retail. You probably did not set the best price for your products. Machine learning can help."
+        },
+        "1": {
+            "title": "Our products - AI for Marketing",
+            "content": "<span style='color: #018db0'>let</span> <span class='product-title' style='color:#c141ec'>knowYourClients</span> = State-of-the art clustering techniques help you get unique and competitive insights from your customer data. Know you customer better than ever."
+        },
+        "2": {
+            "title": "Our products - AI for Marketing",
+            "content": "<span style='color: #018db0'>function</span> <span class='product-title' style='color:#c141ec'>churnDetection() </span> { <br> Churn refers to the speed at which your customer leaves your company or service. Churn happens due to many reasons. Using artificial intelligence, we help you to understand and anticipate it.<br>}"
+        }
+    },
+    {
+        "0": {
+            "title": "Our products - Social Network Mining",
+            "content": "<span style='color: #018db0'>const</span> <span class='product-title' style='color:#c141ec'>DATASCRAPPING</span> = Nowadays data mining and social network analysis techniques are broadly being used to study the structure of your social community. We can help you extract relevant patterns from social networks. This technology is suited to retail actors with a big community."
+        },
+        "1": {
+            "title": "Our products - Social Network Mining",
+            "content": "<span style='color: #018db0'>let</span> <span class='product-title' style='color:#c141ec'>naturalLanguageProcessing</span> = Social network mining mostly involves unstructured text data such as news and hashtags. Using data-scrapping API and cutting-edge natural language processing algorithms we can extract sentiment, trends, and business knowledge from this data."
+        },
+        "2": {
+            "title": "Our products - Social Network Mining",
+            "content": ""
+        }
+    },
+    {
+        "0": {
+            "title": "Our products - Robotic Process Automation",
+            "content": "<span style='color: #018db0'>const</span> <span class='product-title' style='color:#c141ec'>SPEED-UPYOURBUSINESS</span> = In the past companies relied on the perception and judgement capabilities of humans. Now a combination of RPA and technologies such as machine learning, speech recognition and natural language processing help companies automate higher-order tasks with AI assistance."
+        },
+        "1": {
+            "title": "Our products - Robotic Process Automation",
+            "content": "<span style='color: #018db0'>let</span> <span class='product-title' style='color:#c141ec'>identifyYourWeakPoints</span> = To gain the full benefits of cost optimisation you’ll need to identify which tech-enabled tools work best for your business ecosystem and then tailor their application to optimise your costs."
+        },
+        "2": {
+            "title": "Our products - Robotic Process Automation",
+            "content": "<span style='color: #018db0'>function</span> <span class='product-title' style='color:#c141ec'>strategicTimeAllocation() </span> { <br> The opportunities to achieve cost and time efficiencies, flexibility, and scalability are unprecedented. Disover how business cost optimization is reaching the next level with modern solutions such as RPA and machine learning.<br>}"
+        }
+    },
+    {
+        "0": {
+            "title": "Our products - Quantitative Finance",
+            "content": "<span style='color: #018db0'>const</span> <span class='product-title' style='color:#c141ec'>TECHNICALANALYSIS</span> = Technical indicators can be used to build automatic trading strategies. We can help you analyse trends and interesting market crossovers to enter the market at the right time."
+        },
+        "1": {
+            "title": "Our products - Quantitative Finance",
+            "content": "<span style='color: #018db0'>let</span> <span class='product-title' style='color:#c141ec'>quantFinance</span> = From volatility modelling to market regime evaluation, we have an extensive experience in quantitative finance. Our team of experienced mathematicians from top-tier universities fine-tune your strategy."
+        },
+        "2": {
+            "title": "Our products - Quantitative Finance",
+            "content": "<span style='color: #018db0'>function</span> <span class='product-title' style='color:#c141ec'>backtesting() </span> { <br> From machine learning based signals to technical indicator crossovers, any trading strategy has to come with a comprehensive back-testing tool. We provide you with user-friendly feedback reports.<br>}"
+        }
+    }
+]
