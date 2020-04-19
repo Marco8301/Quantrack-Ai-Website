@@ -728,7 +728,7 @@ footer div p {
         width: 20rem;
     }
 
-    #article-header h3 {
+    #article-header h2 {
         width: 15rem;
     }
 
@@ -807,6 +807,10 @@ footer div p {
 
     fieldset {
         display:flex;
+        -webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+        flex-direction: column;
         padding: 0;
     }
 
