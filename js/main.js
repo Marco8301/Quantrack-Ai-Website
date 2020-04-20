@@ -8,7 +8,7 @@ window.addEventListener('scroll', () => {
     if (pageYOffset > 50) {
         nav.classList.add('changed')
         nav.style.height = "3.5rem"
-        logo.style.width = "70%"
+        logo.style.width = "40%"
     } else if (pageYOffset < 1) {
         nav.classList.remove('changed');
     }
