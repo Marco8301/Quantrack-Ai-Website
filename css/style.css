@@ -19,7 +19,6 @@ header {
     height: 0px;
     position: sticky;
     z-index: 9999999999;
-
 }
 
 #section-header {
@@ -30,7 +29,7 @@ header {
 #section-products {
     background-image: url('../sources/img/fond-2.png');
     background-size:cover;
-    padding: 2rem 0 6rem 4rem;
+    padding: 2rem 4rem 6rem 4rem;
 }
 
 #section-workflow, #section-contact-quote {
@@ -39,7 +38,7 @@ header {
     padding: 2rem 4rem 2rem 4rem;
 }
 
-#section-testimonials {
+#section-testimonials, #section-team  {
     padding: 2rem 4rem 6rem 4rem;
 }
 
@@ -81,17 +80,14 @@ header nav {
     background: -moz-linear-gradient(-70deg,  rgba(0,55,70,1) 0%, rgba(1,33,44,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(-70deg,  rgba(0,55,70,1) 0%,rgba(1,33,44,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(-70deg,  rgba(0,55,70,1) 0%,rgba(1,33,44,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003746', endColorstr='#01212c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */    }
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003746', endColorstr='#01212c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */    
+    height: 3.5rem:
+}
 
 #logo-container {
     padding-top: 0.5rem;
     padding-left:4rem;
 }
-
-#logo {
-    width: 55%;
-}
-
 
 
 #btn-menu {
@@ -121,9 +117,6 @@ header nav {
     font-size: 0.9rem;
 }
 
-/* #section-header header {
-    padding: 0 5%;
-} */
 
 #article-header {
     color: white;
@@ -138,7 +131,6 @@ header nav {
 
 #article-header h2 {
     width: 22rem;
-    /* margin-bottom: 10%; */
     margin-bottom: 4rem;
     font-family: "Lato-Light";
     font-size: 1rem;
@@ -401,7 +393,36 @@ border-bottom: 1px solid #c141ec;
     margin-top:0;
 }
 
+/* Team */
 
+#container-team {
+    display:flex;
+    justify-content: space-between;
+}
+
+.article-team {
+    background: rgb(0,55,70); /* Old browsers */
+    background: -moz-linear-gradient(-70deg,  rgba(0,55,70,1) 0%, rgba(1,33,44,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-70deg,  rgba(0,55,70,1) 0%,rgba(1,33,44,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(-70deg,  rgba(0,55,70,1) 0%,rgba(1,33,44,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003746', endColorstr='#01212c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color:white;
+    border-radius: 3px;
+    padding: 3%;
+    font-family: "Lato-Regular";
+    letter-spacing: 0.5px;
+    line-height: 1.3rem;
+    width: 32%;
+}
+.article-team small {
+    padding-left: 1rem;
+}
+
+.p-team {
+    margin: 10px 0;
+    font-size: 0.9rem;
+
+}
 
 /* Testimonials */
 
@@ -423,10 +444,6 @@ border-bottom: 1px solid #c141ec;
     letter-spacing: 0.5px;
     line-height: 1.3rem;
     width: 45%;
-}
-
-.article-testimonials * {
-    margin:2% 0;
 }
 
 .p-testimonials {
@@ -457,7 +474,7 @@ border-bottom: 1px solid #c141ec;
     justify-content: space-around;
     color:white;
     font-family: "Poppins";
-    margin-top:-250px;
+    margin-top:-12rem;
 
 }
 
@@ -612,7 +629,6 @@ footer {
 
 footer * {
     margin:0 auto;
-
 }
 
 footer nav, footer div {
@@ -670,8 +686,8 @@ footer div p {
         width: 100%;
     }
     
-    #section-products, #section-workflow, #section-contact-quote, #section-testimonials, #section-quantrack-universe {
-        padding: 2rem 2rem 2rem 2rem;
+    #section-products, #section-workflow, #section-contact-quote, #section-testimonials, #section-team, #section-quantrack-universe {
+        padding: 2rem;
     }
 
     #section-header header {
@@ -718,7 +734,6 @@ footer div p {
 
     #logo-container img {
         width: 40%;
-
     }
 
     #navlink-container-mobile {
@@ -751,7 +766,7 @@ footer div p {
     }
 
 
-    #container-products, #container-testimonials, .container-contact-quote {
+    #container-products, #container-testimonials, #container-team, .container-contact-quote {
         display: block;
     }
 
@@ -778,6 +793,11 @@ footer div p {
 
 
     .article-testimonials {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .article-team {
         width: 100%;
         margin-bottom: 2rem;
     }
@@ -896,6 +916,10 @@ footer div p {
         padding: 2rem 2rem 2rem 4rem;
     }
 
+    #section-testimonials, #section-team  {
+        padding: 2rem 4rem;
+    }
+
     #section-quantrack-universe {
         background-image: none;
     }
@@ -953,7 +977,7 @@ footer div p {
 
 
 
-    #container-products, #container-testimonials, .container-contact-quote {
+    #container-products, #container-testimonials, #container-team, .container-contact-quote {
         display: block;
     }
 
@@ -980,6 +1004,11 @@ footer div p {
     }
 
     .article-testimonials {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .article-team {
         width: 100%;
         margin-bottom: 2rem;
     }
