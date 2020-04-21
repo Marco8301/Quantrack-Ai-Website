@@ -47,7 +47,6 @@ header {
 }
 
 #section-quote {
-    color:white;
     padding-bottom:4rem;
 }
 
@@ -699,7 +698,7 @@ footer div p {
     }
 
     #section-quote {
-        padding-bottom: 3rem;
+        padding-bottom: 0;
     }
 
     #section-quantrack-universe {
@@ -918,6 +917,10 @@ footer div p {
 
     #section-testimonials, #section-team  {
         padding: 2rem 4rem;
+    }
+
+    #section-quote {
+        padding-bottom: 0;
     }
 
     #section-quantrack-universe {
