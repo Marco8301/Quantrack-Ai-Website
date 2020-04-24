@@ -222,19 +222,22 @@ border-bottom: 1px solid #c141ec;
 #container-products {
     display:flex;
     justify-content: space-between;
+    /* align-items: center; */
 }
+
+
 
 .div-products {
     border:1px solid #002430;
     padding:7%;
-    margin: 1rem auto;
+    margin: 0 auto 1rem;
     width:80%;
     border-radius: 3px;
     text-align: center;
     cursor:pointer;
     color: #023246;
-
 }
+
 
 .div-products:hover, .div-products-selected {
     background: rgb(0,55,70); /* Old browsers */
@@ -254,7 +257,7 @@ border-bottom: 1px solid #c141ec;
 .div-product-description {
     color: white;
     font-family: "Lato-Regular";
-    width: 80%;
+    width: 85%;
     padding-left: 5%;
 }
 
@@ -266,7 +269,7 @@ border-bottom: 1px solid #c141ec;
 }
 
 #console-header {
-    width: 100%; 
+    width: 95%; 
     height: 35px;
     padding-left:1%;
     background-color: #0f313b; 
@@ -309,11 +312,11 @@ border-bottom: 1px solid #c141ec;
 
 #console-main {
     display:flex; 
-    height: 90%;
+    height: 75%;
 }
 
 #console-left-column {
-    width:20%; 
+    width:15%; 
     display:block; 
     background-color: #001e29; 
     border-bottom-left-radius:5px;
@@ -414,6 +417,11 @@ border-bottom: 1px solid #c141ec;
     line-height: 1.3rem;
     width: 32%;
 }
+
+.article-team div {
+    display: flex;
+}
+
 .article-team small {
     padding-left: 1rem;
 }
@@ -772,7 +780,9 @@ footer div p {
 
     #console {
         width: 100%;
-        margin-top: 2rem;
+        /* margin-top: 2rem; */
+        padding-top: 4rem;
+        margin-top: -2rem;
     }
 
 
@@ -1111,6 +1121,10 @@ footer div p {
 
     #section-workflow > div {
         margin-top:0;
+    }
+
+    #console-main {
+        height: 90%;
     }
 
     #arrow {
